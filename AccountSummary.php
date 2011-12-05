@@ -112,14 +112,13 @@ if($_SESSION['cverified']) {
 	oci_free_statement($stmt);
 	oci_close($conn);
 	
-	echo "<form method='post' action=''>\n";
-	echo "<input type='submit' name='submit' value='Account Summary'>\n";
-	echo "</form>\n";
-	echo "<p></p>";
-
+	echo "<hr />\n";
 	echo "<form method='post' action='ActivityHistory.php'>\n";
 	echo "<input type='submit' name='submit' value='Latest Activities'>\n";
+	echo "<table><tr><td>Date from:</td><td align='right'><input type='text' name='datefrom' /></td>\n";
+	echo "	<td>Date to:</td><td align='right'><input type='text' name='dateto' /></td></tr></table>\n";
 	echo "</form>\n";
+	echo "<hr />\n";
 	echo "<p></p>";
 
 	echo "<form method='post' action='AccountProfile.php'>\n";
