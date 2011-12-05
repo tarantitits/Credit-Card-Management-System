@@ -7,7 +7,8 @@
 <p>Username <input type="text" name="susername" /></p>
 <p>Password <input type="password" name="spassword" /></p>
 <input type = "reset" name = "reset" value = "Reset" />
-<input type = "submit" name = "login" value = "Login" />
+<input type = "hidden" name = "action" value = "login" />
+<input type = "submit" value = "Login" />
 </form>
 </body>
 </html>
